@@ -16,6 +16,6 @@ jobs:
       - name: Where am I?
         run: pwd
       - name: Print today's date
-      - run: date
+        run: date
       - name: Check Python version
-      - run: python3 --version
+        run: python3 --version
