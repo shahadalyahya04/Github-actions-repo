@@ -15,3 +15,7 @@ jobs:
         run: cat /etc/os-release
       - name: Where am I?
         run: pwd
+      - name: Print today's date
+      - run: date
+      - name: Check Python version
+      - run: python3 --version
