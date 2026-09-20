@@ -9,3 +9,9 @@ jobs:
     steps:
       - name: Print a greeting
         run: echo "Hello from GitHub Actions!"
+      - name: Who am I?
+        run: whoami
+      - name: What operating system is this?
+        run: cat /etc/os-release
+      - name: Where am I?
+        run: pwd
