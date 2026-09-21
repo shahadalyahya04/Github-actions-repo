@@ -1,0 +1,20 @@
+name: Lab 003 - Triggers
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "**.py"
+  pull_request:
+    branches: [main]
+
+jobs:
+  show-trigger:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Show triggered this run
+       run: |
+         echo "Event name: ${{ github.event_name }}"
+         echo "Branch/ref: ${{ github.ref }}"
+         echo "Actor: ${{ github.actor }}"
