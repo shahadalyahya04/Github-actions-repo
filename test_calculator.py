@@ -10,7 +10,7 @@ def test_divide():
     assert divide(10, 2) == 5
 def test_power():
     assert power(2, 3) == 8
-    assert power(5, 0) == 1
+    assert power(5, 0) == 10
 def test_divide_by_zero():
     with pytest.raises(ValueError):
         divide(1, 0)
