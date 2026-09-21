@@ -6,6 +6,7 @@ def main():
     print(f"Hello, {name}!")
     print(f"Hello, {name}!")
     print(f"Python version: {sys.version}")
+    print(f"Python version: {sys.version}")
     print(f"Running on: {platform.system()}")
 
 if __name__ == "__main__":
