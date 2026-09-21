@@ -1,6 +1,8 @@
 name: Lab 003 - Triggers
 
 on:
+  schedule:
+    - cron: "0 8 * * 1"   # every Monday at 08:00 UTC
   workflow_dispatch:
   push:
     branches: [main]
